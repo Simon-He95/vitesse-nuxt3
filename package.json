@@ -1,11 +1,24 @@
 {
+  "name": "vitesse",
+  "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@7.5.0",
+  "repository": {
+    "type": "git",
+    "url": "git + git@github.com:Simon-He95/vitesse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Simon-He95/vitesse/issues"
+  },
+  "keywords": [
+    "vitesse"
+  ],
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
@@ -20,5 +33,8 @@
     "nuxt": "^3.0.0-rc.6",
     "pinia": "^2.0.16",
     "typescript": "^4.7.4"
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
   }
 }
