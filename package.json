@@ -13,12 +13,15 @@
   "keywords": [
     "vitesse"
   ],
+  "engines": {
+    "node": ">=14.6"
+  },
   "scripts": {
     "build": "nuxi build",
     "dev": "nuxi dev",
     "start": "node .output/server/index.mjs",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
+    "lint:fix": "pnpm run lint --fix",
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
