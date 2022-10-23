@@ -4,3 +4,15 @@ dist
 .output
 .nuxt
 .env
+*.DS_Store  
+idea/ 
+*.local 
+.DS_Store 
+.cache 
+.idea 
+logs 
+&-debug.log 
+*-error.log
+.eslintcache
+tmp
+

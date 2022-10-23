@@ -2,7 +2,7 @@
   "name": "vitesse",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "pnpm@7.5.0",
+  "packageManager": "pnpm@7.6.0",
   "repository": {
     "type": "git",
     "url": "git + git@github.com:Simon-He95/vitesse.git"
