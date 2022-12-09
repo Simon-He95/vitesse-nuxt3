@@ -18,13 +18,13 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "postinstall": "simple-git-hooks",
     "build": "nuxi build",
     "dev": "nuxi dev",
     "start": "node .output/server/index.mjs",
     "format": "prettier --write --cache .",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
-    "lint:fix": "pnpm run lint --fix",
-    "postinstall": "nuxi prepare"
+    "lint:fix": "pnpm run lint --fix"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
@@ -34,15 +34,15 @@
     "@pinia/nuxt": "^0.3.0",
     "@unocss/nuxt": "^0.44.5",
     "@vueuse/nuxt": "^8.9.4",
+    "bumpp": "^8.2.1",
     "eslint": "^8.20.0",
+    "lint-staged": "^13.1.0",
     "nuxt": "^3.0.0-rc.6",
     "pinia": "^2.0.16",
-    "typescript": "^4.7.4",
-    "bumpp": "^8.2.1",
-    "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
     "simple-git-hooks": "^2.8.1",
-    "tsx": "^3.12.1"
+    "tsx": "^3.12.1",
+    "typescript": "^4.7.4"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged --concurrent false",
